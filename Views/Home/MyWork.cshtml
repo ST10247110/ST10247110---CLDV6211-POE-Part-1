@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ST10247110___CLDV6211_POE_Part_1.Models.ArtPiece>
+
+    @{
+        ViewData["Title"] = "MyWork";
+    }
+
+    <div class="container">
+        <h1>My Work</h1>
+        <div class="row">
+            @foreach (var ArtPiece in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <!-- Card header -->
+                        <h5 class="card-header">@ArtPiece.artTitle</h5>
+                        <div class="card-body">
+                            <!-- Card image (replace with actual image URL) -->
+                            <img src="@Url.Content(ArtPiece.artImageURL)" class="card-img-top" alt="Product Image">
+                            <!-- Card content -->
+                            <p class="card-text">@ArtPiece.artDescription</p>
+                            <!-- Card footer -->
+                            <div class="card-footer text-muted">
+                                Price: R@(ArtPiece.artPrice.ToString("0.00"))
+                            </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn custom-btn-primary">View Product</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

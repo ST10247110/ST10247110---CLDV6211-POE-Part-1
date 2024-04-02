@@ -1,0 +1,27 @@
+body {
+    font-family: 'Delius', cursive;
+}
+
+.custom-btn-primary {
+    background-color: #333333;
+    border-color: #333333; /* Use the same color for the border */
+    color: #ffffff; /* Text color for the button (white in this case) */
+}
+
+/* Color Scheme */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark text color */
+}
+
+/* Typography */
+body {
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+h1, h2, h3 {
+    font-weight: bold; /* Bold headings */
+    margin-top: 20px; /* Spacing above headings */
+    margin-bottom: 10px; /* Spacing below headings */
+}
